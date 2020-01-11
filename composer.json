@@ -1,0 +1,31 @@
+{
+    "name": "qmeyti/menubuilder",
+    "description": "drag and drop menu generator like wordpress for laravel 6",
+    "keywords": ["Laravel", "Menu"],
+    "authors": [
+        {
+            "name": "Mehdi hajatpour",
+            "email": "mehdi.hajatpour@gmail.com",
+            "role" : "Original Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+          "SoeurngSar\\MenuBuilder\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SoeurngSar\\MenuBuilder\\MenuServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "SoeurngSar\\MenuBuilder\\app\\Facades\\Menu"
+            }
+        }
+    }
+}
